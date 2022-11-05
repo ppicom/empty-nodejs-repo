@@ -1,5 +1,6 @@
 import * as assert from "assert";
 import Grid from "../src/grid.js"
+import Cell from "../src/cell.js"
 
 describe("Tests", function() {
     it('should run', function() {
@@ -13,5 +14,10 @@ describe("Tests", function() {
         let grid = new Grid(4)
 
         assert.equal(grid.width, 4)
+    })
+    it('cell jumps into existence', function() {
+        let cell = new Cell(1, 1);
+        
+        assert.equal(cell.exists, true)
     })
 })
