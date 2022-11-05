@@ -31,4 +31,16 @@ describe("Tests", function() {
 
         assert.equal(grid.seed == seed, true)
     })
+
+    it('if one, then true', function() {
+        let seed = [
+            [1, 0, 0, 0],
+            [0, 0, 0, 0],
+            [0, 0, 0, 0],
+            [0, 0, 0, 0]
+        ]
+        let grid = new Grid(4, 4, seed)
+
+        assert.equal(grid.getCell(0,0), true)
+    })
 })

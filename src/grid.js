@@ -8,4 +8,10 @@ export default class Grid {
     get exists() {
         return true
     }
+
+    getCell(x, y) {
+        if (this.seed[x][y] == 0)
+            return false
+        return true
+    }
 }
