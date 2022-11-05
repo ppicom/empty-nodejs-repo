@@ -20,4 +20,15 @@ describe("Tests", function() {
         
         assert.equal(cell.exists, true)
     })
+    it('introduce seed to grid', function() {
+        let seed = [
+            [0, 0, 0, 0],
+            [0, 0, 0, 0],
+            [0, 0, 0, 0],
+            [0, 0, 0, 0]
+        ]
+        let grid = new Grid(4, 4, seed)
+
+        assert.equal(grid.seed == seed, true)
+    })
 })
