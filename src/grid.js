@@ -1,5 +1,8 @@
 export default class Grid {
-    constructor(length, width) {}
+    constructor(width, length) {
+        this.length = length;
+        this.width = width;
+    }
 
     get exists() {
         return true
